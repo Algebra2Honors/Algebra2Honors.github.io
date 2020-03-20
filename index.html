@@ -4,7 +4,7 @@
 <head>
     <style>
 
-html,
+        html,
         body {
             height: 100%;
             width: 100%;
@@ -96,8 +96,6 @@ html,
 
         div.content {
             background-color: white;
-            height: 110vh;
-            overflow-y: hidden;
         }
 
         div.reports {
@@ -137,7 +135,7 @@ html,
 
         }
 
-        div#rp2 {
+        div#rp2{
             background-image: url('https://cdn.guidingtech.com/imager/assets/189308/8-Stunning-HD-Tesla-Wallpapers-5_4d470f76dc99e18ad75087b1b8410ea9.jpg?1535110787');
             background-size: cover;
             background-position: center;
@@ -172,12 +170,40 @@ html,
             font-weight: 200;
             font-size: 20px;
             color: black;
-            height: 4em;
-            padding-top: 6em;
         }
-        div.viewMore {
+        hr{
+            margin: 0px;
+        }
+        a{
+            text-decoration: none;
+        }
+        h1#footerlink{
+            text-align: center;
+            font-weight: 200;
+            margin: 0px;
 
+            color: black;
         }
+        div.flex{
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            margin: 4em;
+        }
+        div.incPadding{
+            border: 0.5px solid black;
+            border-radius: 25px;
+            padding: 1em;
+            padding-right: 2em;
+            padding-left: 2em;
+            transition: all ease-in-out 0.1s;
+        }
+        div.incPadding:hover{
+            padding-right: 2.2em;
+            padding-left: 2.2em;
+        }
+        
+
 
         /* d="M0,192L34.3,197.3C68.6,203,137,213,206,213.3C274.3,213,343,203,411,192C480,181,549,171,617,181.3C685.7,192,754,224,823,245.3C891.4,267,960,277,1029,272C1097.1,267,1166,245,1234,240C1302.9,235,1371,245,1406,250.7L1440,256L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z" */
         /* d="M0,192L34.3,170.7C68.6,149,137,107,206,117.3C274.3,128,343,192,411,181.3C480,171,549,85,617,80C685.7,75,754,149,823,154.7C891.4,160,960,96,1029,80C1097.1,64,1166,96,1234,112C1302.9,128,1371,128,1406,128L1440,128L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z" */
@@ -219,7 +245,8 @@ html,
         </div>
 
         <div class="footer">
-            <div>Conclusion</div>
+
+            <div class="flex"><a href="conclusion.html"><div class="incPadding"><h1 id="footerlink">Conclusion</h1></div></a></div>
             <hr></hr>
             <div class="footer-flex">
                 <p> Algebra 2 Honors </p>

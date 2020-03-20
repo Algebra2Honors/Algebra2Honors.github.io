@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <style>
+        html,
+        body {
+            height: 100%;
+            width: 100%;
+            margin: 0px;
+        }
+
+        div.topnav {
+            background-color: white;
+            position: fixed;
+            width: 100vw;
+            display: flex;
+            flex-flow: row;
+            align-items: center;
+            z-index: 2;
+        }
+
+        .tpnv-element {
+            font-family: 'Montserrat', serif;
+            font-weight: 200;
+            padding: 0.25em;
+            padding-right: 0.5em;
+            padding-left: 0.5em;
+        }
+
+        h2#A2H {
+            margin-left: 2em;
+            margin-right: auto;
+        }
+
+        h2#by {
+            margin-right: 2em;
+            font-size: 20px;
+        }
+
+        div.sec1 {
+            height: auto;
+            width: 100%;
+            padding-top: 20vh;
+            background-image: url('ferns.jpeg');
+            background-size: cover;
+            background-position-y: center;
+            background-attachment: fixed;
+        }
+
+        h1#page-title {
+            font-family: 'Montserrat', serif;
+            font-weight: 400;
+            font-size: 90px;
+            white-space: nowrap;
+            color: white;
+            text-align: center;
+        }
+
+        svg#wave1 {
+            display: block;
+        }
+
+        path#wave1-path {
+            animation: wave linear infinite alternate;
+            animation-duration: 50s;
+        }
+
+        @keyframes wave {
+            0% {
+                d: path("M0,192L34.3,197.3C68.6,203,137,213,206,213.3C274.3,213,343,203,411,192C480,181,549,171,617,181.3C685.7,192,754,224,823,245.3C891.4,267,960,277,1029,272C1097.1,267,1166,245,1234,240C1302.9,235,1371,245,1406,250.7L1440,256L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z");
+            }
+
+            50% {
+                d: path("M0,96L34.3,133.3C68.6,171,137,245,206,245.3C274.3,245,343,171,411,165.3C480,160,549,224,617,213.3C685.7,203,754,117,823,101.3C891.4,85,960,139,1029,186.7C1097.1,235,1166,277,1234,266.7C1302.9,256,1371,192,1406,160L1440,128L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z");
+            }
+
+            100% {
+                d: path("M0,192L34.3,170.7C68.6,149,137,107,206,117.3C274.3,128,343,192,411,181.3C480,171,549,85,617,80C685.7,75,754,149,823,154.7C891.4,160,960,96,1029,80C1097.1,64,1166,96,1234,112C1302.9,128,1371,128,1406,128L1440,128L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z");
+            }
+        }
+
+        div.content {
+            background-color: white;
+        }
+
+        div.block1 {
+            padding: 3em;
+        }
+        div.rect{
+            border: 0.5px solid grey;
+            margin-top: 2em;
+            border-radius: 25px;
+        }
+        div.textcontain{
+            padding: 2em;
+        }
+        div.textcontain>h1 {
+            font-family: 'Montserrat';
+            font-weight: 200;
+        }
+
+        div.textcontain>p {
+            line-height: 2em;
+            font-family: 'Lato', sans-serif;
+        }
+        div.footer-flex{
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: center;
+            justify-content: space-between;
+            padding-right: 20px;
+            padding-left: 20px;
+        }
+        div.footer{
+            font-family: 'Montserrat';
+            font-weight: 200;
+            font-size: 20px;
+            color: black;
+        }
+        hr{
+            margin: 0px;
+        }
+        a{
+            text-decoration: none;
+        }
+        h1#footerlink{
+            text-align: center;
+            font-weight: 200;
+            margin: 0px;
+
+            color: black;
+        }
+        div.flex{
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            margin: 4em;
+        }
+        div.incPadding{
+            border: 0.5px solid black;
+            border-radius: 25px;
+            padding: 1em;
+            padding-right: 2em;
+            padding-left: 2em;
+            transition: all ease-in-out 0.1s;
+        }
+        div.incPadding:hover{
+            padding-right: 2.2em;
+            padding-left: 2.2em;
+        }
+        
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,400" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <title>Report One</title>
+</head>
+
+<body>
+    <div class="topnav">
+        <h2 class="tpnv-element" id="A2H">Handout 7D</h2>
+        <h2 class="tpnv-element" id="by">Riley and Daniel</h2>
+    </div>
+    <div class="sec1">
+        <h1 id="page-title"> Conclusion</h1>
+        <svg id="wave1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path id="wave1-path" fill="white" fill-opacity="1"
+                d="M0,192L34.3,170.7C68.6,149,137,107,206,117.3C274.3,128,343,192,411,181.3C480,171,549,85,617,80C685.7,75,754,149,823,154.7C891.4,160,960,96,1029,80C1097.1,64,1166,96,1234,112C1302.9,128,1371,128,1406,128L1440,128L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z">
+            </path>
+        </svg>
+    </div>
+    <div class="content">
+        <div class="block1">
+            <div class="rect">
+                <div class="textcontain">
+                <h1> World Temperature: </h1>
+                <p> For Problem A, the two models that I chose were cubic and quintic. Using their equations I ended up
+                    with the prediction that in 2030, the temperature will be 14.96°C (with the cubic model) or 18.26°C
+                    (with the quintic model). By reformatting the data to show the percent change from the previous
+                    year, I was very surprised to learn that the world temperature is not continuously rising. The
+                    temperature is actually sometimes less than the year before. Viewing real data about something that
+                    affects my life was very interesting.
+                </p>
+            </div>
+        </div>
+            <div class="rect">
+                <div class="textcontain">
+                <h1> Electric Cars: </h1>
+                <p>Initially, we planned on focusing the report on self-driving automobiles. We wanted to predict when
+                    51%
+                    of automobile sales in the United States would be autonomous. We decided not to go through with this
+                    idea because there was no solid data for this topic. Currently, there are no fully autonomous
+                    vehicles
+                    for sale, so all the data we found was pure speculation. Because of this, we looked at electric
+                    vehicles
+                    as a potential topic. Electric vehicles are a large topic of discussion in the automotive world, and
+                    we
+                    were able to find solid data, so we decided to focus on electric vehicles. However, we still wanted
+                    to
+                    incorporate autonomous vehicles into our project so we decided to look at Tesla sales. Tesla is a
+                    leader
+                    in the automobile market when it comes to electric vehicles and driver assistance features, so we
+                    saw it
+                    as a great automobile manufacturer to bridge the worlds of electric vehicles and autonomous
+                    vehicles. We
+                    were able to find data on Tesla sales starting from the year 2011, and used that data to form our
+                    prediction for when 51% of annual vehicle sales in the United States would be Tesla’s. While we did
+                    not
+                    accomplish what we initially planned, we adapted and formed a project we are very proud of. 
+                </p>
+            </div>
+        </div>
+            <div class="rect">
+                <div class="textcontain">
+                <h1> Clean Charging:</h1>
+                <p>We knew that we wanted to do a second, very different report that still
+                    relates
+                    to our electric car report. Our first idea was to find when a new revolutionary transportation
+                    technology would become mainstream, based on how often humans switch modes of transportation. We gathered
+                    the
+                    data about when humans changed from horses, to trains, to cars, to planes, but found that we were
+                    only
+                    able to get a few data points, and it did not seem like a prediction would be accurate. Our
+                    hesitation
+                    was confirmed when we realized that humans started using horses around 3500 BCE, which would greatly
+                    skew our data. Because of these difficulties, we switched to when electric charging stations will
+                    outnumber gas stations. The data for this topic soon proved to be surprisingly difficult to find,
+                    and
+                    after much searching we only found a few data points. Therefore, we switched for the third time to
+                    ‘When
+                    will most of the electricity used for electric car charging come from clean sources?’. This was a
+                    very
+                    interesting topic because before, I had not thought about whether our not the electricity itself was
+                    made using environmentally friendly techniques. I finally arrived at an answer: in late 2223, most
+                    of
+                    our energy used to charge cars will come from clean sources. Another aspect that I could have looked
+                    into would be whether clean sources are being used disproportionately to charge cars, and therefore
+                    looking at the world’s power sources is not an accurate representation. However, this report was
+                    still
+                    very intriguing to think about and the result was very surprising!</p>
+            </div>
+        </div>
+        </div>
+        <div class="footer">
+
+            <div class="flex"><a href="index.html"><div class="incPadding"><h1 id="footerlink">Back to home</h1></div></a></div>
+            <hr></hr>
+            <div class="footer-flex">
+                <p> Algebra 2 Honors </p>
+                <p> 2020</p>
+            </div>
+            
+        </div>
+    </div>
+</body>
+
+</html>
